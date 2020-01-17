@@ -9,4 +9,5 @@ class RomanjiTest extends FunSuite with Matchers {
   test("Drama")      { romanji("ドラマ") shouldBe "dorama" }
   test("Ice-cream")  { romanji("アイスクリーム") shouldBe "aisukurīmu" }
   test("Knock")      { romanji("ノック") shouldBe "nokku"}
+  test("kya")        { romanji("キヤ") shouldBe "kya"}
 }

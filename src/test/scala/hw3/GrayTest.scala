@@ -16,4 +16,16 @@ class GrayTest extends FunSuite with Matchers {
   test("Gray example 3 bits") {
     gray(3) shouldBe List("000", "001", "011", "010", "110", "111", "101", "100")
   }
+
+  test("negative bits") {
+    assertThrows[IllegalArgumentException] {
+      gray(-5)
+    }
+  }
+
+  test("zero bits") {
+    assertThrows[IllegalArgumentException] {
+      gray(0)
+    }
+  }
 }
